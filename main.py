@@ -31,8 +31,8 @@ if __name__ == '__main__':
     # target_precision = float(sys.argv[3])
     # query = sys.argv[4]
 
-    api_key = "AIzaSyCRnG7OG9U5R7nobD1VQvhxoc33mYmr08g"
-    engine_id = "015777630004812292025:fvvd1zkgpmv"
+    api_key = ""
+    engine_id = ""
     target_precision = 0.5
     query = "Milky way"
 
