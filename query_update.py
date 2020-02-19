@@ -77,7 +77,7 @@ def calculate_term_weights(alpha = 1.0, beta = 0.75, gamma = 0.15, query_weights
         else:
             nonRelCount += 1
             for term in doc["tfvec"]:
-                nonRelTFWeights[term] = doc["tfvec"][term] if no term in nonRelTFWeights else nonRelTFWeights[term] + doc["tfvec"][term]
+                nonRelTFWeights[term] = doc["tfvec"][term] if not term in nonRelTFWeights else nonRelTFWeights[term] + doc["tfvec"][term]
     
 #    for id in relDocs:
 #        doc = documentList[id]
