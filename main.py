@@ -17,18 +17,13 @@ def google_search(api_key, engine_id, query):
 
 
 if __name__ == '__main__':
-    # if len(sys.argv) != 5:
-    #    print("main <google api key> <google engine id> <precision> <query>")
-    #    exit(1)
-    # api_key = sys.argv[1]
-    # engine_id = sys.argv[2]
-    # target_precision = float(sys.argv[3])
-    # query = sys.argv[4]
-
-    api_key = "AIzaSyCRnG7OG9U5R7nobD1VQvhxoc33mYmr08g"
-    engine_id = "015777630004812292025:fvvd1zkgpmv"
-    target_precision = 1.0
-    query = "jaguar"
+    if len(sys.argv) != 5:
+        print("main <google api key> <google engine id> <precision> <query>")
+        exit(1)
+    api_key = sys.argv[1]
+    engine_id = sys.argv[2]
+    target_precision = float(sys.argv[3])
+    query = sys.argv[4]
 
     while True:
         cur_precision = 0.0
